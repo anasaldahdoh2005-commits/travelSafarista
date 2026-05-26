@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Safarista.travel — عيد أضحى مبارك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- الموسيقى -->
+  <audio id="eid-audio">
+    <source src="images/eidd.mp3" type="audio/mpeg"/>
+  </audio>
+</head>
+<body>
+
+<!-- Orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- Canvas bg -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ══ PLANE INTRO ══════════════════════════ -->
+<div id="plane-intro">
+  <div class="intro-stars" id="intro-stars"></div>
+
+  <p class="intro-text">Safarista.travel</p>
+
+  <!-- الطيارة — زر تفاعلي -->
+  <button class="intro-plane-btn" id="intro-plane-btn" onclick="launchPlane()">
+    <span class="big-plane" id="big-plane">✈️</span>
+    <span class="plane-pulse-ring"></span>
+  </button>
+
+  
+  <p class="intro-cta-text">🛫 اقلع واحصل على خصم العيد من Safarista.travel</p>
+</div>
+
+<!-- ══ HEADER ═══════════════════════════════ -->
+<header class="site-header">
+  <div class="logo-wrap">
+    <span class="logo-icon">✈️</span>
+    <span class="logo-text">Safarista.travel</span>
+  </div>
+  <div class="header-right">
+    <div class="offer-badge">🌙 العرض لمدة ٣ أيام فقط</div>
+    <a class="insta-link" href="https://www.instagram.com/safarista.travel/" target="_blank" rel="noopener">
+      <span class="insta-icon">📸</span>
+      @safarista.travel
+    </a>
+  </div>
+</header>
+
+<!-- ══ HERO ═════════════════════════════════ -->
+<main>
+<section class="hero">
+
+  <div class="crescent-wrap" aria-hidden="true">
+    <svg class="kaaba-deco" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" fill="var(--gold)">
+      <rect x="30" y="80" width="160" height="130" rx="4"/>
+      <polygon points="20,80 110,30 200,80"/>
+      <rect x="28" y="115" width="164" height="8" fill="rgba(0,0,0,0.3)"/>
+      <rect x="88" y="142" width="44" height="68" rx="3" fill="rgba(0,0,0,0.35)"/>
+      <circle cx="110" cy="176" r="4" fill="rgba(200,150,10,0.8)"/>
+      <rect x="92" y="26" width="36" height="8" rx="2" fill="rgba(200,150,10,0.9)"/>
+      <text x="14" y="55" font-size="14" fill="rgba(255,220,80,0.7)">✦</text>
+      <text x="196" y="65" font-size="10" fill="rgba(255,220,80,0.5)">✦</text>
+      <text x="10" y="155" font-size="8" fill="rgba(255,220,80,0.4)">✦</text>
+    </svg>
+    <div class="deco-star">✦</div>
+    <div class="deco-star">✦</div>
+    <div class="deco-star">✦</div>
+  </div>
+
+  <div class="glass-card hero-card">
+
+    <div class="eid-label">🌙 عرض عيد الأضحى المبارك</div>
+
+    <h1 class="hero-title">
+      <span class="title-line-1">عيد أضحى</span>
+      <span class="title-line-2">مبارك</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      احتفالاً بعيد الأضحى المبارك، تُقدّم <strong>Safarista.travel</strong> هدية حصرية
+      لجعل رحلتك القادمة لا تُنسى.
+    </p>
+
+    <!-- بطاقات تفاصيل العرض -->
+    <div class="offer-details">
+      <div class="offer-detail-card">
+        <span class="od-icon">🏷️</span>
+        <span class="od-value">10%</span>
+        <span class="od-label">خصم حصري</span>
+      </div>
+      <div class="offer-detail-card">
+        <span class="od-icon">⏳</span>
+        <span class="od-value">٣ أيام</span>
+        <span class="od-label">من 26/5 حتى 29/5</span>
+      </div>
+      <div class="offer-detail-card">
+        <span class="od-icon">👥</span>
+        <span class="od-value">٢٠ شخص</span>
+        <span class="od-label">أول ٢٠ طلب فقط</span>
+      </div>
+    </div>
+
+    <!-- زر التواصل -->
+    <a class="cta-btn" href="https://www.instagram.com/safarista.travel/" target="_blank" rel="noopener">
+      <span class="btn-icon">✈️</span>
+      <span class="btn-text">احجز رحلتك الآن</span>
+      <span class="btn-shine"></span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ══ INFO STRIP ════════════════════════════ -->
+<section class="info-strip">
+  <div class="info-card glass-card">
+    <span class="info-icon">📸</span>
+    <div>
+      <p class="info-title">تابعنا على إنستغرام</p>
+      <p class="info-detail">
+        <a href="https://www.instagram.com/safarista.travel/" target="_blank" rel="noopener">
+          @safarista.travel
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Safarista.travel — كل عام وأنتم بخير 🌙✈️</p>
+  <p>
+    تصميم وبرمجة |
+    <a href="https://www.instagram.com/a.aldahdouh_2000/" target="_blank" rel="noopener">
+      أنس محمد الدحدوح
+    </a>
+  </p>
+</footer>
+
+<script>
+  /* ── Particles background ── */
+  (function () {
+    var canvas = document.getElementById("bg-canvas");
+    var ctx = canvas.getContext("2d");
+    var particles = [];
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener("resize", resize);
+
+    for (var i = 0; i < 80; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 2 + 1,
+        speedY: Math.random() * 0.5 + 0.2,
+        opacity: Math.random() * 0.5
+      });
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(function (p) {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(255,215,120," + p.opacity + ")";
+        ctx.fill();
+        p.y -= p.speedY;
+        if (p.y < -10) p.y = canvas.height + 10;
+      });
+      requestAnimationFrame(animate);
+    }
+    animate();
+  })();
+
+  /* ── Launch plane on click ── */
+  function launchPlane() {
+    var audio = document.getElementById('eid-audio');
+    var plane = document.getElementById('big-plane');
+    var intro = document.getElementById('plane-intro');
+    var btn   = document.getElementById('intro-plane-btn');
+
+    // شغّل الموسيقى
+    audio.play().catch(function(){});
+
+    // عطّل الزر
+    btn.disabled = true;
+
+    // أنيميشن الطيران لفوق
+    plane.style.transition = 'transform 1.1s cubic-bezier(.4,0,.2,1), opacity 0.8s ease';
+    plane.style.transform  = 'translateY(-120vh) rotate(-30deg) scale(1.6)';
+    plane.style.opacity    = '0';
+
+    // بعد 1.1 ثانية انتقل للصفحة
+    setTimeout(function () {
+      intro.classList.add('hidden');
+    }, 1000);
+  }
+</script>
+
+</body>
+</html>
